@@ -4,11 +4,11 @@ namespace DesafioEstacionamento.Models
     {
         public decimal ValorInicial { get; private set; }     
         public decimal ValorHora { get; private set; } 
-        private List<veiculo> veiculos; 
+        private List<Veiculo> veiculos; 
 
         public Estacionamento()
         {
-            veiculos = new List<veiculo>();
+            veiculos = new List<Veiculo>();
         }
 
         public void AdicionarValorInicial(decimal valorInicial)
@@ -33,7 +33,7 @@ namespace DesafioEstacionamento.Models
             veiculos.Remove(veiculo);
         }
 
-        public List<veiculo> ListarVeiculos()
+        public List<Veiculo> ListarVeiculos()
         {
             Validarveiculos();
             return veiculos;
